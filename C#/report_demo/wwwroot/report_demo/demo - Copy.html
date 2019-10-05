@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>demo</title>
+    <script src="../lib/jquery/dist/jquery.min.js" ></script>
+    <script src="js/jquery.table2excel.js"></script>
+    <style type="text/css">
+    iframe {
+        width: 100%;
+        height: 100%;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    body {
+        overflow: hidden;
+        width: auto;
+        height: auto;
+        margin: 0px;
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+    }
+    </style>
+</head>
+
+<body>
+    <button class=".btn">导出Excel</button>
+    <iframe  frameborder="0" scrolling="false" id="report" src=""></iframe>
+</body>
+<script type="text/javascript">
+            $(function() {
+
+                $.ajax({
+                    url : "/rdp/GetRdpReportHtml",
+                    data:{"rdpGuid":"d65fcdaf6141ca869573b96fa4f93869","paramList":{param:1001}},
+                    type:"post",
+                    async:true,
+                    dataType: "json",
+                    success : function(json) {
+                        var ddd=JSON.parse(json.value.result)
+                        if(ddd.code==0){
+                            var data=ddd.list;
+                            try{if(parent.document&&parent.initParm!=undefined){
+                                parent.initParm(0);
+                                parent.document.title=data.title;
+                            }
+                            }catch(e){}
+                            if(data.expires!='0'){
+                                $('#license').html(data.exprisemsg);
+                            }
+                            if(pageflag==0&&jsonStr==''){$("#pagesize").val(data.pageSize);}
+                            var dbody=$('<div>'+data.body+'</div>');
+                            var ncss='<style type="text/css" media="all">'+data.css+'</style>';
+                            document.title=data.title;
+                            var newbody=ncss+dbody.html();
+                            subreport=data.subreport;
+                            fillreport=data.fillreport;
+                            if(fillreport){
+                                $('.btnexport').hide();$('.btnfillreport').show();
+                            }
+                            if(page==1){
+                                if(!isJb){totalRecord=parseInt(data.totalRecord);}
+                                if(totalRecord>0&&!subreport){
+                                    if(isJb){
+                                        $('#totalrecord').html(totalRecord);
+                                    }else{
+                                        $('#totalrecord').html(data.totalRecord);
+                                    }
+                                    if(!subreport){//主子报表不显示总记录数
+                                        $('#totalrecord').parent('label').show();
+                                    }
+                                }
+                                if(data.pageSize!=-2){if(!subreport&&data.pageSize!=-1){$('#pageparm').show();}}else{ispubu=true;}
+                            }
+                            $("#report").html(newbody);
+                            
+                        }else{
+                            alert('请求失败，'+ddd.msg);
+                        }
+                    },
+                    error:function(){console.log('suhjujiazaichucuo');}
+                });
+                //
+                //
+                // var $report=$(frames["prefrm"].document)
+                // var $table=report.find("table");
+                // $(".btn").click(function(){
+                //     table.table2excel({
+                //         // 不被导出的表格行的CSS class类
+                //         exclude: ".noExl",
+                //         // 导出的Excel文档的名称
+                //         name: "Excel Document Name",
+                //         // Excel文件的名称
+                //         filename: "test",
+                //         //文件后缀名
+                //         fileext: ".xls",
+                //         //是否排除导出图片
+                //         exclude_img: false,
+                //         //是否排除导出超链接
+                //         exclude_links: false,
+                //         //是否排除导出输入框中的内容
+                //         exclude_inputs: false
+                //     });
+                // }); 
+            });
+</script>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="http://localhost:8080/socket.io/socket.io.js" charset="utf-8"></script>
+    <script>
+    let sock=io.connect('ws://localhost:8080/')
+    sock.emit('a',1,2,3,4,5)
+
+      // let xhr=new XMLHttpRequest();
+      //
+      // xhr.open('GET','data/1.txt',true)
+      // xhr.send();
+      // xhr.onreadystatechange=()=>{
+      //   if (xhr.readystate==4) {
+      //     if (xhr.status>=200&&xhr.status<300) {
+      //       alert("success")
+      //     }else{
+      //       alert("fail")
+      //     }
+      //   }
+      // }
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

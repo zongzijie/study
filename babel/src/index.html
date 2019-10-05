@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script>
+    function show(json){
+      let ul=document.getElementById('ul')
+      ul.innerHTML=""
+      json.s.forEach(function(s){
+        let li=document.createElement("li")
+        li.innerHTML=s
+        ul.appendChild(li)
+      })
+    }
+    window.onload = () => {
+      let txt = document.getElementById("txt")
+      txt.oninput=()=>{
+        let sc=document.createElement("script")
+
+        sc.src=`https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=${txt.value}&cb=show`
+        document.head.appendChild(sc)
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <input type="text" id="txt" name="" value="">
+  <ul id="ul">
+
+  </ul>
+</body>
+
+</html>

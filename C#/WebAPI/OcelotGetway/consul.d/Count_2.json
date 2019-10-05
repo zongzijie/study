@@ -1,0 +1,9 @@
+{
+  "service": {
+    "id": "count2",
+    "name": "Count",
+    "tags": ["dev"],
+    "address": "localhost",
+    "port": 5002
+  }
+}

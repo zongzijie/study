@@ -1,0 +1,30 @@
+DEBUG:root:2018-05-21 23:47:19 - Thread-1 - File saved: ./output/jr.jd.com
+DEBUG:root:2018-05-21 23:47:41 - Thread-1 - File saved: ./output/jr.jd.com
+DEBUG:root:Exception: _ssl.c:817: The handshake operation timed out
+DEBUG:root:2018-05-22 21:20:15 - Thread-1 - File saved: ./output/jr.jd.com
+DEBUG:root:Exception: no host given
+DEBUG:root:Exception: no host given
+DEBUG:root:Exception: no host given
+DEBUG:root:Exception: no host given
+DEBUG:root:Exception: no host given
+DEBUG:root:Exception: no host given
+DEBUG:root:Exception: no host given
+DEBUG:root:2018-05-22 21:23:35 - Thread-1 - File saved: ./output/jr.jd.com
+DEBUG:root:2018-05-22 21:23:36 - Thread-2 - File saved: ./output/jira.mingyuanyun.com-
+DEBUG:root:Exception: no host given
+DEBUG:root:Exception: no host given
+DEBUG:root:Exception: no host given
+DEBUG:root:Exception: no host given
+DEBUG:root:Exception: no host given
+DEBUG:root:Exception: no host given
+DEBUG:root:Exception: no host given
+DEBUG:root:2018-05-22 21:24:54 - Thread-1 - File saved: ./output/jr.jd.com
+DEBUG:root:2018-05-22 21:24:54 - Thread-2 - File saved: ./output/axhub.im-
+DEBUG:root:2018-05-22 21:24:55 - Thread-3 - File saved: ./output/jira.mingyuanyun.com-
+DEBUG:root:Exception: no host given
+DEBUG:root:Exception: no host given
+DEBUG:root:Exception: no host given
+DEBUG:root:Exception: no host given
+DEBUG:root:Exception: no host given
+DEBUG:root:Exception: no host given
+DEBUG:root:Exception: no host given

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+
+      let xhr=new XMLHttpRequest();
+
+      xhr.open('GET','data/1.xml',true)
+      xhr.send();
+      xhr.onreadystatechange=()=>{
+        if (xhr.readyState==4) {
+          if (xhr.status>=200&&xhr.status<300) {
+            // alert("success")
+            let p=xhr.responseXML.getElementsByTagName('person')
+
+            console.log(p[0].children)
+          }else{
+            alert("fail")
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
