@@ -15,8 +15,11 @@ namespace WebApplication3
         {
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
+            
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            
             GlobalConfiguration.Configure(WebApiConfig.Register);
+            
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
     }

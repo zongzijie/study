@@ -15,7 +15,7 @@ namespace SampleForAspNetCoreMvc.Controllers
     public class HomeController : Controller
     {
 
-        [ActionDescription("wujj")]
+       [ActionDescription("wujj")]
         public string Description()
         {
             return ControllerContext.ActionDescriptor.Properties["description"].ToString();

@@ -78,6 +78,7 @@ namespace SampleForAspNetCoreMvc.ApplicationModels
             var controllerActionInvokerCacheEntry = cachedResult.cacheEntry;
             if (controllerActionInvokerCacheEntry!=null)
             {
+                //兼容多参数绑定的实现
                 CompatibilityClownFishWeb(controllerActionDescriptor,
                     controllerActionInvokerCacheEntry);
             }

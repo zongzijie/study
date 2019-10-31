@@ -12,6 +12,7 @@ namespace SampleForAspNetCoreMvc.ApplicationModels
         {
             this._des = des;
         }
+        
         public void Apply(ActionModel action)
         {
             action.Properties["description"] ="action"+ _des;

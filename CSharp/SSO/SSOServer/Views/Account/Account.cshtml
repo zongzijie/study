@@ -1,0 +1,34 @@
+@{
+    ViewData["Title"] = "Index";
+}
+@model LoginVM;
+<h2>Index</h2>
+
+
+<div class="row">
+    <div class="col-md-4">
+        <section>
+            <form method="post" asp-controller="Account" asp-action="Login" asp-route-returnUrl="@ViewData["returnUrl"]">
+                <h4>Use a local to log in .</h4>
+                <hr />
+                <div class="from-group">
+                    <label asp-for="UserName"></label>
+                    <input asp-for="UserName" class="form-control">
+                    <span asp-validation-for="UserName" class="text-danger"></span>
+                </div>
+                <div class="from-group">
+                    <label asp-for="PassWord"></label>
+                    <input asp-for="PassWord" type="password" class="form-control">
+                    <span asp-validation-for="UserName" class="text-danger"></span>
+                </div>
+                <div class="from-group">
+                    <button type="submit" class="btn btn-default">log in </button>
+                </div>
+            </form>
+        </section>
+    </div>
+</div>
+@section Scripts
+{
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}
