@@ -1,0 +1,63 @@
+<mxfile host="www.draw.io" modified="2019-10-31T08:21:10.701Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" etag="HYbK_4lv3IhSq27Hy8tE" version="12.1.9" type="github" pages="1">
+  <diagram id="9FFfj44KJ8ohlHvKvo-P" name="Page-1">
+    <mxGraphModel dx="1146" dy="550" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="TVGnAus1W4a4rOe1_OLl-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="TVGnAus1W4a4rOe1_OLl-1" target="TVGnAus1W4a4rOe1_OLl-2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="TVGnAus1W4a4rOe1_OLl-1" value="MVC开始" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="100" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="TVGnAus1W4a4rOe1_OLl-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="TVGnAus1W4a4rOe1_OLl-2" target="TVGnAus1W4a4rOe1_OLl-4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="TVGnAus1W4a4rOe1_OLl-13" value="识别" style="text;html=1;resizable=0;points=[];align=center;verticalAlign=middle;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="TVGnAus1W4a4rOe1_OLl-5">
+          <mxGeometry x="-0.15" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TVGnAus1W4a4rOe1_OLl-2" value="认识AppService" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="100" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="TVGnAus1W4a4rOe1_OLl-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="TVGnAus1W4a4rOe1_OLl-4" target="TVGnAus1W4a4rOe1_OLl-6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="TVGnAus1W4a4rOe1_OLl-12" value="路由" style="text;html=1;resizable=0;points=[];align=center;verticalAlign=middle;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="TVGnAus1W4a4rOe1_OLl-7">
+          <mxGeometry x="0.075" relative="1" as="geometry">
+            <mxPoint as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TVGnAus1W4a4rOe1_OLl-4" value="给AppService的每一个公开方法设置路由" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="100" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="TVGnAus1W4a4rOe1_OLl-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="TVGnAus1W4a4rOe1_OLl-6" target="TVGnAus1W4a4rOe1_OLl-10">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="TVGnAus1W4a4rOe1_OLl-14" value="激活" style="text;html=1;resizable=0;points=[];align=center;verticalAlign=middle;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="TVGnAus1W4a4rOe1_OLl-11">
+          <mxGeometry x="-0.025" relative="1" as="geometry">
+            <mxPoint as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TVGnAus1W4a4rOe1_OLl-6" value="激活AppService时可以使用服务工厂创建对象实例" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="240" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="TVGnAus1W4a4rOe1_OLl-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="TVGnAus1W4a4rOe1_OLl-10" target="TVGnAus1W4a4rOe1_OLl-15">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="TVGnAus1W4a4rOe1_OLl-17" value="绑定多参数" style="text;html=1;resizable=0;points=[];align=center;verticalAlign=middle;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="TVGnAus1W4a4rOe1_OLl-16">
+          <mxGeometry x="-0.175" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TVGnAus1W4a4rOe1_OLl-10" value="调用AppService的方法前绑定多个参数" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="240" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="TVGnAus1W4a4rOe1_OLl-15" value="调用云ERP的特色Action" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="240" width="120" height="60" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
