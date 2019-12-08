@@ -1,1 +1,81 @@
-<mxfile host="www.draw.io" modified="2019-12-08T12:12:40.811Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36" version="12.3.8" etag="iCJSum2cahu2SkKYJD27" type="github"><diagram id="tjlspPEoNq_fKtMsYYIo">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="www.draw.io" modified="2019-12-08T13:06:38.384Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36" etag="isDeDFAhEXLuoTUShNMV" version="12.3.8" type="github" pages="1">
+  <diagram id="tjlspPEoNq_fKtMsYYIo" name="Page-1">
+    <mxGraphModel dx="2506" dy="590" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="pe99sonY0yX8zJ3GIKji-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pe99sonY0yX8zJ3GIKji-1" target="pe99sonY0yX8zJ3GIKji-2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="pe99sonY0yX8zJ3GIKji-1" value="Request" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="20" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="pe99sonY0yX8zJ3GIKji-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pe99sonY0yX8zJ3GIKji-2" target="pe99sonY0yX8zJ3GIKji-4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="pe99sonY0yX8zJ3GIKji-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;" edge="1" parent="1" source="pe99sonY0yX8zJ3GIKji-2" target="pe99sonY0yX8zJ3GIKji-8">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="pe99sonY0yX8zJ3GIKji-12" value="订单状态维护" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="pe99sonY0yX8zJ3GIKji-9">
+          <mxGeometry x="-0.05" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pe99sonY0yX8zJ3GIKji-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;strokeColor=#EA6B66;" edge="1" parent="1" source="pe99sonY0yX8zJ3GIKji-2" target="pe99sonY0yX8zJ3GIKji-1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="pe99sonY0yX8zJ3GIKji-21" value="用户支付成功了，但是订单还是未支付状态" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="pe99sonY0yX8zJ3GIKji-19">
+          <mxGeometry x="0.175" relative="1" as="geometry">
+            <mxPoint as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pe99sonY0yX8zJ3GIKji-2" value="Service A" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="160" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="pe99sonY0yX8zJ3GIKji-8" value="DB A" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="300" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="pe99sonY0yX8zJ3GIKji-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pe99sonY0yX8zJ3GIKji-4" target="pe99sonY0yX8zJ3GIKji-6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="pe99sonY0yX8zJ3GIKji-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;" edge="1" parent="1" source="pe99sonY0yX8zJ3GIKji-4" target="pe99sonY0yX8zJ3GIKji-10">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="pe99sonY0yX8zJ3GIKji-13" value="支付状态维护" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="pe99sonY0yX8zJ3GIKji-11">
+          <mxGeometry x="-0.175" y="2" relative="1" as="geometry">
+            <mxPoint y="5" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pe99sonY0yX8zJ3GIKji-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;strokeColor=#FF6666;" edge="1" parent="1" source="pe99sonY0yX8zJ3GIKji-4" target="pe99sonY0yX8zJ3GIKji-2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="pe99sonY0yX8zJ3GIKji-23" value="X" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="pe99sonY0yX8zJ3GIKji-15">
+          <mxGeometry x="-0.05" relative="1" as="geometry">
+            <mxPoint as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pe99sonY0yX8zJ3GIKji-4" value="Service B" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="160" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="pe99sonY0yX8zJ3GIKji-10" value="DB B" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="300" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="pe99sonY0yX8zJ3GIKji-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;strokeColor=#000000;" edge="1" parent="1" source="pe99sonY0yX8zJ3GIKji-6" target="pe99sonY0yX8zJ3GIKji-4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="pe99sonY0yX8zJ3GIKji-6" value="ServiceC" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="160" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="pe99sonY0yX8zJ3GIKji-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;" edge="1" parent="1" source="pe99sonY0yX8zJ3GIKji-24" target="pe99sonY0yX8zJ3GIKji-25">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="pe99sonY0yX8zJ3GIKji-24" value="Starter" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="440" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="pe99sonY0yX8zJ3GIKji-25" value="Coordinator协调者" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="440" width="120" height="60" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
